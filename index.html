@@ -527,6 +527,59 @@ body {
         font-size: 2.2rem !important;
     }
 }
+/* ===== MOBILE FINAL FIX — BIGGER LOGO + LESS GAP + BIG BUTTONS ===== */
+@media (max-width: 480px) {
+
+    /* Top spacing remove */
+    body {
+        padding-top: 15px !important;
+    }
+
+    .hero {
+        padding-top: 0 !important;
+        margin-top: -10px !important;
+    }
+
+    /* Logo container closer to top */
+    .logo-container {
+        margin-top: -5px !important;
+        margin-bottom: 0 !important;
+        transform: scale(1.15) !important; /* 🔥 Bigger logo */
+    }
+
+    /* Actual logo size */
+    .logo {
+        width: 240px !important;   /* 🔥 Larger & sharp */
+        height: 240px !important;
+    }
+
+    .logo-glow {
+        width: 320px !important;
+        height: 320px !important;
+        filter: blur(32px) !important; /* smooth glow */
+    }
+
+    /* Title spacing */
+    .hero-title {
+        margin-top: -5px !important;
+        font-size: 2.3rem !important;
+        line-height: 1.1 !important;
+    }
+
+    /* Bigger buttons */
+    .cta-buttons .btn {
+        width: 95% !important;
+        padding: 18px 0 !important;   /* 🔥 increases button height */
+        font-size: 17px !important;
+        border-radius: 50px !important;
+    }
+
+    /* Space between buttons */
+    .cta-buttons {
+        gap: 14px !important;
+        margin-top: 5px !important;
+    }
+}
 
 /* ============ End Inlined CSS ============ */
     </style>
