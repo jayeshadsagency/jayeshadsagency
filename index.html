@@ -501,32 +501,6 @@ body {
         right: 20px !important;
     }
 }
-/* ===== MOBILE LOGO SIZE FIX ===== */
-@media (max-width: 480px) {
-
-    .logo-container {
-        transform: scale(0.92) !important;
-        margin-top: 10px !important;
-        margin-bottom: 5px !important;
-    }
-
-    .logo {
-        width: 200px !important;   /* 🔥 PERFECT SIZE */
-        height: 200px !important;
-    }
-
-    .logo-glow {
-        width: 260px !important;
-        height: 260px !important;
-        filter: blur(28px) !important;
-    }
-
-    /* Hero spacing adjust */
-    .hero-title {
-        margin-top: 5px !important;
-        font-size: 2.2rem !important;
-    }
-}
 /* ===== MOBILE FINAL FIX — BIGGER LOGO + LESS GAP + BIG BUTTONS ===== */
 @media (max-width: 480px) {
 
@@ -578,6 +552,35 @@ body {
     .cta-buttons {
         gap: 14px !important;
         margin-top: 5px !important;
+    }
+}
+@media (max-width: 480px) {
+
+    /* Bigger logo but with safe spacing */
+    .logo-container {
+        transform: scale(1.18) !important;
+        margin-top: -5px !important;
+        margin-bottom: 20px !important; /* 👈 SMALL BUT SAFE GAP */
+    }
+
+    /* Logo actual size */
+    .logo {
+        width: 240px !important;
+        height: 240px !important;
+    }
+
+    .logo-glow {
+        width: 320px !important;
+        height: 320px !important;
+    }
+
+    /* Move hero title down slightly */
+    .hero-title {
+        margin-top: 10px !important;  /* 👈 FIXES OVERLAP */
+        font-size: 2.2rem !important;
+        line-height: 1.1 !important;
+        position: relative;
+        z-index: 5;
     }
 }
 
